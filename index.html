@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taboo</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="clearfix">
+
+    <h1 class="top text-center">HackerYou TABOO</h1>
+
+    <div class="starter">
+        <p style="color: white">Welcome Team 1, Press start to begin!</p>
+        <div class="pressStart">
+            <button class='start btn-lg'>🙃 Start 🙃</button>
+        </div>
+    </div>
+
+    <div class="pickTeam">
+        <p style="color: white">Select the next team:</p>
+        <div class="team1button">
+            <button class="team1 btn-lg">Team 1</button>
+        </div>
+        <div class="team2button">
+            <button class="team2 btn-lg">Team 2</button>
+        </div>
+    </div>
+
+    <div class="wrapper clearfix">
+
+        <div class="scoredisplay1">
+            <h2>Score Team 1: <span type="teamNameOne"><span><span class="score1">0</span></h2>
+        </div>
+
+        <div class="scoredisplay2">
+            <h2>Score Team 2:<span type="teamNameTwo"><span><span class="score2">0</span></h2>
+        </div>
+
+        <div class="timerdisplay">
+            <h3>Timer: <span class="timer"></span> seconds left!</h3>
+        </div>
+
+        <div class="progressBarModal">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%; background-color: purple">
+                </div>
+            </div>
+        </div>
+
+        <div class="pausebutton">
+            <button class="pause">pause</button>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo1'>
+                <h4>HackerYou</h4>
+                <list>
+                    <ul>
+                        <li>Heather</li>
+                        <li>Coding</li>
+                        <li>Juno</li>
+                        <li>Mark</li>
+                        <li>Dev</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo2'>
+                <h4>Softball</h4>
+                <list>
+                    <ul>
+                        <li>Monday</li>
+                        <li>Play</li>
+                        <li>Ball</li>
+                        <li>Throw</li>
+                        <li>Sports</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo3'>
+                <h4>Javascript</h4>
+                <list>                    
+                    <ul>
+                        <li>Fun</li>
+                        <li>Cool</li>
+                        <li>Function</li>
+                        <li>Jquery</li>
+                        <li>Coffee</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo4'>
+                <h4>Mark</h4>
+                <list>                    
+                    <ul>
+                        <li>Teacher</li>
+                        <li>Superzoom</li>
+                        <li>Dogs</li>
+                        <li>Enthusiastic</li>
+                        <li>HackerYou</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo5'>
+                <h4>CSS</h4>
+                <list>                    
+                    <ul>
+                        <li>Style</li>
+                        <li>HTML</li>
+                        <li>Pretty</li>
+                        <li>Gradient</li>
+                        <li>Website</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo6'>
+                <h4>Taboo</h4>
+                <list>                    
+                    <ul>
+                        <li>Best</li>
+                        <li>Game</li>
+                        <li>Unsaid</li>
+                        <li>Fun</li>
+                        <li>Board</li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='tabooCardWrapper'>
+            <div class='tabooCard taboo7'>
+                <h4>Waiting</h4>
+                <list>                    
+                    <ul>
+                        <li>for</li>
+                        <li>the</li>
+                        <li>WINNER</li>
+                        <li>!!!</li>
+                        <li></li>
+                    </ul>
+                </list>
+            </div>
+        </div>
+
+        <div class='correctButton'>
+            <button class='correct btn-lg'>Correct</button>
+        </div>
+        <div class='skipButton btn-lg'>
+            <button class='skip'>Skip</button>
+        </div> 
+        <div class='tabooButton'>
+            <button class='taboo btn-lg'>Taboo</button>
+        </div>
+
+    </div>
+
+    <div class="resumeButton">
+        <button class="resume btn-lg">resume</button>
+    </div>
+
+    <div class="winner">
+        <h2 class="winWin">Yay Team <span class="winWinWin"></span> is the winner!</h2>
+        <div class="playAgainButton">
+            <button class="playAgain btn-lg">Play Again?</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src='sandbox.js'></script>
+    <audio id="mysoundclip" preload="auto">
+        <source src="assets/Buzzer-SoundBible.com-188422102.mp3"> </source>
+    </audio>
+</body>
+</html>
